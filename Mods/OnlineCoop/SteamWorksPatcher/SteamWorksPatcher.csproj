@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SteamWorksPatcher</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>0.0.0</Version>
+    <PackageId>TaleSpire.$(AssemblyName)</PackageId>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TaleSpire-Modding/EOSPlugin.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TaleSpire-Modding/EOSPlugin.git</PackageProjectUrl>
+    <Description>This is a developer tool to send network messages over EOS</Description>
+    <PackageTags>TaleSpire;Mods;</PackageTags>
+    <licenseUrl>https://github.com/TaleSpire-Modding/EOSPlugin/raw/main/LICENSE.txt</licenseUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Authors>HolloFox</Authors>
+    <LangVersion>8</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Binaries\Mono.Cecil.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
