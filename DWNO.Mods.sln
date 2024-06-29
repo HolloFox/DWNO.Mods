@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOSPlugin", "Mods\OnlineCoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreResolutions", "Mods\MoreResolutions\MoreResolutions.csproj", "{0E177872-B866-46AE-B63F-5A82B466F483}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstantBuild", "Mods\BuildSettings\InstantBuild.csproj", "{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{0E177872-B866-46AE-B63F-5A82B466F483}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E177872-B866-46AE-B63F-5A82B466F483}.Release|x64.ActiveCfg = Release|Any CPU
 		{0E177872-B866-46AE-B63F-5A82B466F483}.Release|x64.Build.0 = Release|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Debug|x64.Build.0 = Debug|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Release|x64.ActiveCfg = Release|Any CPU
+		{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
