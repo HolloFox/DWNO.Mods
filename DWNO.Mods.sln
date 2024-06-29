@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreResolutions", "Mods\Mor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstantBuild", "Mods\BuildSettings\InstantBuild.csproj", "{A306F0CC-C9C8-4C95-8C5C-2A8F23597457}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49D1DC44-0965-4FE8-8E5C-96273172B109}"
+	ProjectSection(SolutionItems) = preProject
+		My Roadmap.md = My Roadmap.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
