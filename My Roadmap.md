@@ -1,21 +1,5 @@
-## City Settings
-	- Dojo
-		- Can use menu to block/unblock digivolution paths anywhere instead of just dojo
-	- Gym
-		- Auto Train (skip mini-game and auto pass)
-	- Fields
-		- Custom food rate
-	- Sender
-		- Pricing
-	- WareHouse
-		- Gifts/Upkeep sent to Warehouse on first open per day
-
-## Digi Partner settings
-	- Age for Evolution
-	- Rebirth Inheritance
-	- Unlock digi-info inside
-	- AutoSkip digi-info prompts
-	- AutoSkip partner prompts
+## Botamon Menu
+	- Replaces Botamon Dialog to Open a table
 
 ## Online Coop (2-4 player)
 	- NetCode (EOS)
