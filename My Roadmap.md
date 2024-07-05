@@ -9,11 +9,12 @@
    		- Shared Town Warehouse inventory
 		- Shared Town Material Storage
 	- Town
-		- Training Gym Disabled (Initial XP Boost)
+		- Training Gym Disabled (Initial Parameter Boost for partner)
   		- DNA digivolutions shares resident pool
-		- Gifts from town is given to All players 
+		- Gifts from town is given to All players
+		- Dojo (Evo blocking can be used anywhere once unlocked)
 	- Player (2-4)
-		- 2 player: 2 digimon partner each
+		- 2 player: 2 digimon partners each
   		- 3-4 player: 1 digimon partner each
 		- XP/Level Sync
 		- Separate skill tree,
@@ -23,12 +24,15 @@
 		- Death Sync all Partners
 		- Digivolve Sync all Partners
   			- All digimon need to be able to digivolve
-  		- Auto Consumes Food/Toilet as needed
+		- Bond is shared between all partners
 	- Battle
-		- XP Boost due to World Time
+		- XP Boost due to World Time and scaled enemies
+  			- XP rate is increased by *(1 + (rate)*(gen-1))
 		- Loot pool updated for multiple players
 	 	- Enemies Scaled up slightly for more players
+   		- OP player/partner specific
 	- World
 		- Time can't be paused EXCEPT for battles
   		- One Hit Resource
 		- Instant Fishing
+  		- Shared Collectibles Progress (e.g. Cards, Digimon Info, 
