@@ -15,9 +15,8 @@
 	- [ ] DNA digivolutions shares resident pool
 	- [ ] Gifts from town is given to All players
 	- [ ] Dojo (Evo blocking can be used anywhere once unlocked)
-- [ ] Player (2-4)
-	- [ ] 2 player: 2 digimon partners each
-	- [ ] 3-4 player: 1 digimon partner each
+- [ ] Player (1-4)
+	- [ ] 1 digimon partner each
 	- [ ] XP/Level Sync
 	- [ ] Separate skill tree,
 	- [ ] PC can use/replace NPC model
