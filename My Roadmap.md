@@ -3,6 +3,8 @@
 
 ## Online Coop (2-4 player)
 - [ ] NetCode (EOS)
+	- [ ] Lobby system to join games
+	- [ ] P2P Consumer code interface for other mods
 - [ ] Inventory
 	- [ ] Separate Player Item inventory
 	- [ ] Separate Player Material storage
@@ -30,8 +32,9 @@
 	- [ ] XP Boost due to World Time and scaled enemies
 		- [ ] XP rate is increased by *(1 + (rate)*(gen-1))
 	- [ ] Loot pool updated for multiple players
-	- [ ] Enemies Scaled up slightly for more players
+	- [ ] Enemies Scaled up slightly for more players/digimon partners
 	- [ ] OP player/partner specific
+	- [ ] Time doesn't slow down in strategy/battle menu
 - [ ] World
 	- [ ] Time can't be paused EXCEPT for battles
 	- [ ] One Hit Resource
