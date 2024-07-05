@@ -24,6 +24,7 @@
 		- Death Sync all Partners
 		- Digivolve Sync all Partners
   			- All digimon need to be able to digivolve
+			- Split Screen / Simultaneous Digivolve Scene
 		- Bond is shared between all partners
 	- Battle
 		- XP Boost due to World Time and scaled enemies
