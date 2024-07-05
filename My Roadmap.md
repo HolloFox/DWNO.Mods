@@ -18,22 +18,33 @@
 	- AutoSkip partner prompts
 
 ## Online Coop (2-4 player)
-	- Co-op settings
-	- Death Sync
-	- EOS (Allow mods to also use the netcode)
-	- PC can use NPC skin
-	- NPC swaps with unused PC model
-	- NPC aren't visible in-game if both taken
-	- NPC Digimon inherit from players 3/4 in custscenes
-	- 2 players, each player has 2 digimon
-	- 3-4 players, each player has 1 digimon
-	- Separate skill tree, shared tamer xp
-	- Separate inventory
-	- Shared warehouse inventory
-	- Separate Material storage
-	- Battles don't pause/slow time
-	- Menus don't pause/slow time
-	- No Training Menu except for Baby/Fresh (No time skip)
-	- Extra DNA digivolutions share resident pool so can't use same resident across multiple digivolutions
-	- Save is kept with host
-	- Rebirth Stat is player/digimon based as intended
+	- NetCode (EOS)
+ 	- Inventory
+ 		- Separate Player Item inventory
+   		- Separate Player Material storage
+   		- Shared Town Warehouse inventory
+		- Shared Town Material Storage
+	- Town
+		- Training Gym Disabled (Initial XP Boost)
+  		- DNA digivolutions shares resident pool
+		- Gifts from town is given to All players 
+	- Player (2-4)
+		- 2 player: 2 digimon partner each
+  		- 3-4 player: 1 digimon partner each
+		- XP/Level Sync
+		- Separate skill tree,
+  		- PC can use/replace NPC model
+	- Partner
+		- Rebirth's "max stat" is Partner specific
+		- Death Sync all Partners
+		- Digivolve Sync all Partners
+  			- All digimon need to be able to digivolve
+  		- Auto Consumes Food/Toilet as needed
+	- Battle
+		- XP Boost due to World Time
+		- Loot pool updated for multiple players
+	 	- Enemies Scaled up slightly for more players
+	- World
+		- Time can't be paused EXCEPT for battles
+  		- One Hit Resource
+		- Instant Fishing
