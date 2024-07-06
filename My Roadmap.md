@@ -1,3 +1,6 @@
+## Botamon Menu
+	- Provides a menu to list and track recruited digimon
+
 ## City Settings
 	- Dojo
 		- Can use menu to block/unblock digivolution paths anywhere instead of just dojo

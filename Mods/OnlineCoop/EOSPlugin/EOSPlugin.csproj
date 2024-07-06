@@ -10,7 +10,6 @@
     <PackageId>EOS.$(AssemblyName)</PackageId>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>This is a developer tool to send network messages over EOS</Description>
     <PackageTags>EOS;Mods;</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -56,8 +55,8 @@
 
   <PropertyGroup>
     <PreBuildEvent>
-      xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\EOSSDK-$(EOSSDKPlatform)-Shipping.dll" "$(MSBuildProjectDirectory)\$(OutputPath)"
-      xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\$(PlatformTarget)\xaudio2_9redist.dll" "$(MSBuildProjectDirectory)\$(OutputPath)"
+      <!-- xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\EOSSDK-$(EOSSDKPlatform)-Shipping.dll" "$(MSBuildProjectDirectory)\$(OutputPath)"
+      xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\$(PlatformTarget)\xaudio2_9redist.dll" "$(MSBuildProjectDirectory)\$(OutputPath)" -->
     </PreBuildEvent>
   </PropertyGroup>
 

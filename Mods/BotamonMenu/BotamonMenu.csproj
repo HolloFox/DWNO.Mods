@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>InstantBuild</AssemblyName>
-    <Product>Adjusts the speed town upgrades are built</Product>
+    <AssemblyName>BotamonMenu</AssemblyName>
+    <Product>Replaces Dialog with Botamon to a Table of Digimon Citizens</Product>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
@@ -13,7 +13,7 @@
       https://nuget.bepinex.dev/v3/index.json;
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
-    <RootNamespace>InstantBuild</RootNamespace>
+    <RootNamespace>BotamonMenu</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
