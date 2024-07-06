@@ -17,6 +17,8 @@ namespace BattleStatsMultiplier
 
         static ManualLogSource Logger = BepInEx.Logging.Logger.CreateLogSource(PluginName);
 
+        internal static ConfigEntry<int> MaxDigimonGeneration;
+
         internal static ConfigEntry<int> BattleRateAdd;
         internal static ConfigEntry<double> BattleRateMultiply;
         internal static ConfigEntry<int> battleRateGenAdd;
@@ -30,6 +32,8 @@ namespace BattleStatsMultiplier
         public override void Load()
         {
             //configfile
+            MaxDigimonGeneration = Config.Bind("Generation Configuration", "Max Generation Bonus", 20, "This is the effective cap to rebirths for xp scaling");
+            
             BattleRateAdd = Config.Bind("Battle Configuration", "Added", 0, "Rate in which battle status rewards are added by. Use a positive number.");
             BattleRateMultiply = Config.Bind("Battle Configuration", "Multiplied", 1.0, "Rate in which battle status rewards are multiplied by. Use a positive number.");
             battleRateGenAdd = Config.Bind("Battle Configuration", "Generational Add", 0, "Rate in which battle status rewards are added by (Scales with Digimon Generation). Use a positive number.");
@@ -68,7 +72,7 @@ namespace BattleStatsMultiplier
                 ref int forcefulnessRiseValue,ref int robustnessRiseValue,ref int clevernessRiseValue,
                 ref int rapidityRiseValue, int fatigueRiseValue)
             {
-                int gen = (int)__instance.m_partnerCtrl.m_data.m_partnerData.m_GenerationNum - 1;
+                int gen = Math.Min((int)__instance.m_partnerCtrl.m_data.m_partnerData.m_GenerationNum - 1, MaxDigimonGeneration.Value);
                 double multiplier;
                 int adder;
 

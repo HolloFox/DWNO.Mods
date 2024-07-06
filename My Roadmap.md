@@ -1,9 +1,6 @@
 ## Botamon Menu
 	- Replaces Botamon Dialog to Open a table
 
-## Battle Stats Multiplier
-- [ ] Add more stats to be multiplied
-
 ## Online Coop (2-4 player)
 - [ ] NetCode (EOS)
 	- [ ] Lobby system to join games
