@@ -1,42 +1,41 @@
 ## Botamon Menu
-	- Provides a menu to list and track recruited digimon
-
-## City Settings
-	- Dojo
-		- Can use menu to block/unblock digivolution paths anywhere instead of just dojo
-	- Gym
-		- Auto Train (skip mini-game and auto pass)
-	- Fields
-		- Custom food rate
-	- Sender
-		- Pricing
-	- WareHouse
-		- Gifts/Upkeep sent to Warehouse on first open per day
-
-## Digi Partner settings
-	- Age for Evolution
-	- Rebirth Inheritance
-	- Unlock digi-info inside
-	- AutoSkip digi-info prompts
-	- AutoSkip partner prompts
+	- Replaces Botamon Dialog to Open a table
 
 ## Online Coop (2-4 player)
-	- Co-op settings
-	- Death Sync
-	- EOS (Allow mods to also use the netcode)
-	- PC can use NPC skin
-	- NPC swaps with unused PC model
-	- NPC aren't visible in-game if both taken
-	- NPC Digimon inherit from players 3/4 in custscenes
-	- 2 players, each player has 2 digimon
-	- 3-4 players, each player has 1 digimon
-	- Separate skill tree, shared tamer xp
-	- Separate inventory
-	- Shared warehouse inventory
-	- Separate Material storage
-	- Battles don't pause/slow time
-	- Menus don't pause/slow time
-	- No Training Menu except for Baby/Fresh (No time skip)
-	- Extra DNA digivolutions share resident pool so can't use same resident across multiple digivolutions
-	- Save is kept with host
-	- Rebirth Stat is player/digimon based as intended
+- [ ] NetCode (EOS)
+	- [ ] Lobby system to join games
+	- [ ] P2P Consumer code interface for other mods
+- [ ] Inventory
+	- [ ] Separate Player Item inventory
+	- [ ] Separate Player Material storage
+	- [ ] Shared Town Warehouse inventory
+	- [ ] Shared Town Material Storage
+- [ ] Town
+	- [ ] Training Gym Disabled (Initial Parameter Boost for partner)
+	- [ ] DNA digivolutions shares resident pool
+	- [ ] Gifts from town is given to All players
+	- [ ] Dojo (Evo blocking can be used anywhere once unlocked)
+- [ ] Player (1-4)
+	- [ ] 1 digimon partner each
+	- [ ] XP/Level Sync
+	- [ ] Separate skill tree,
+	- [ ] PC can use/replace NPC model
+- [ ] Partner
+	- [ ] Rebirth's "max stat" is Partner specific
+	- [ ] Death Sync all Partners
+	- [ ] Digivolve Sync all Partners
+		- [ ] All digimon need to be able to digivolve
+		- [ ] Split Screen / Simultaneous Digivolve Scene
+	- [ ] Bond is shared between all partners
+- [ ] Battle
+	- [ ] XP Boost due to World Time and scaled enemies
+		- [ ] XP rate is increased by *(1 + (rate)*(gen-1))
+	- [ ] Loot pool updated for multiple players
+	- [ ] Enemies Scaled up slightly for more players/digimon partners
+	- [ ] OP player/partner specific
+	- [ ] Time doesn't slow down in strategy/battle menu
+- [ ] World
+	- [ ] Time can't be paused EXCEPT for battles
+	- [ ] One Hit Resource
+	- [ ] Instant Fishing
+	- [ ] Shared Progress (e.g. Cards, Digimon Info, ...)
