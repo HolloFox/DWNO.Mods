@@ -25,8 +25,7 @@
 	- [ ] Death Sync all Partners
 	- [ ] Digivolve Sync all Partners
 		- [ ] All digimon need to be able to digivolve
-		- [ ] Split Screen / Simultaneous Digivolve Scene
-	- [ ] Bond is shared between all partners
+	- [ ] Auto uses portable toilet and prevent TF before TF invoked 
 - [ ] Battle
 	- [ ] XP Boost due to World Time and scaled enemies
 		- [ ] XP rate is increased by *(1 + (rate)*(gen-1))
