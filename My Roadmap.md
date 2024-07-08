@@ -1,9 +1,6 @@
 ## Botamon Menu
 - [ ] Replaces Botamon Dialog to Open a table
 
-## Evo Blocking Anywhere
-- [ ] Dojo (Evo blocking can be used anywhere once unlocked)
-
 ## Online Coop (2-4 player)
 - [ ] NetCode (EOS)
 	- [ ] Lobby system to join games
