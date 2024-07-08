@@ -29,9 +29,11 @@
 	- [ ] Loot pool updated for multiple players
 	- [ ] Enemies Scaled up slightly for more players/digimon partners
 	- [ ] OP player/partner specific
-	- [ ] Time doesn't slow down in strategy/battle menu
 - [ ] World
 	- [ ] Time can't be paused EXCEPT for battles
-	- [ ] One Hit Resource
-	- [ ] Instant Fishing
 	- [ ] Shared Progress (e.g. Cards, Digimon Info, ...)
+ - [ ] Dependent Mods
+	- [x] Seamless Battle
+	- [x] Battle Stats Multiplier
+	- [x] One Hit Resource
+	- [x] Instant Fishing
