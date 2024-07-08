@@ -1,5 +1,8 @@
 ## Botamon Menu
-	- Replaces Botamon Dialog to Open a table
+- [ ] Replaces Botamon Dialog to Open a table
+
+## Evo Blocking Anywhere
+- [ ] Dojo (Evo blocking can be used anywhere once unlocked)
 
 ## Online Coop (2-4 player)
 - [ ] NetCode (EOS)
@@ -14,7 +17,6 @@
 	- [ ] Training Gym Disabled (Initial Parameter Boost for partner)
 	- [ ] DNA digivolutions shares resident pool
 	- [ ] Gifts from town is given to All players
-	- [ ] Dojo (Evo blocking can be used anywhere once unlocked)
 - [ ] Player (1-4)
 	- [ ] 1 digimon partner each
 	- [ ] XP/Level Sync
