@@ -16,21 +16,19 @@
 - [ ] Town
 	- [ ] Training Gym Disabled (Initial Parameter Boost for partner)
 	- [ ] DNA digivolutions shares resident pool
-	- [ ] Gifts from town is given to All players
+	- [ ] Gifts from town is local
 - [ ] Player (1-4)
 	- [ ] 1 digimon partner each
 	- [ ] XP/Level Sync
 	- [ ] Separate skill tree,
 	- [ ] PC can use/replace NPC model
 - [ ] Partner
-	- [ ] Rebirth's "max stat" is Partner specific
+	- [ ] Rebirth's "max stat" is shared for balance
 	- [ ] Death Sync all Partners
 	- [ ] Digivolve Sync all Partners
 		- [ ] All digimon need to be able to digivolve
 	- [ ] Auto uses portable toilet and prevent TF before TF invoked 
 - [ ] Battle
-	- [ ] XP Boost due to World Time and scaled enemies
-		- [ ] XP rate is increased by *(1 + (rate)*(gen-1))
 	- [ ] Loot pool updated for multiple players
 	- [ ] Enemies Scaled up slightly for more players/digimon partners
 	- [ ] OP player/partner specific
