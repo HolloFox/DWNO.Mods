@@ -1,9 +1,10 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using BepInEx.Unity.IL2CPP;
+using BepInEx.Unity.IL2CPP.Utils.Collections;
 using HarmonyLib;
-using System.Runtime.InteropServices;
-using UnityEngine;
+using System.Collections;
+using System.Threading;
 
 namespace BotamonMenu;
 
@@ -19,65 +20,29 @@ public class Plugin : BasePlugin
     static ManualLogSource Logger = BepInEx.Logging.Logger.CreateLogSource(PluginName);
     public override void Load() => Harmony.CreateAndPatchAll(typeof(Plugin), GUID);
 
-    [HarmonyPatch(typeof(EventTriggerManager), "AddEventTriger")]
+    private static EventWindowPanel instance;
+
+    private static bool searching = false;
+    private static SemaphoreSlim semaphore = new SemaphoreSlim(1, 1);
+
+    [HarmonyPatch(typeof(TalkMain), "DispTextMain")]
     [HarmonyPrefix]
-    public static bool EventTriggerManager_AddEventTriger_Prefix(GameObject _object, uint _placementId)
+    public static bool TalkMain_DispTextMain_Postfix(string name, string text, ref Il2CppSystem.Collections.IEnumerator __result)
     {
-        Logger.LogWarning($"AddEventTriger:{_object.name}: {_placementId}");
-        if (_placementId == 532456915)
+        Logger.LogInfo($"TalkMain_DispTextMain_Postfix: {name} {text}");
+        if (name == "a001" && (text == "TOWN_TALK_A001_001" || text == "TOWN_TALK_A001_002"))
         {
-            Logger.LogWarning($"Trigger found!!:{_placementId}");
+            __result = GetEnumerator().WrapToIl2Cpp();
             return false;
         }
         return true;
     }
 
-    
+    public static Il2CppSystem.Collections.IEnumerator wrapped = GetEnumerator().WrapToIl2Cpp();
 
-    [HarmonyPatch(typeof(EventTriggerManager), "ActiveTalkEventTrigger")]
-    [HarmonyPrefix]
-    public static void EventTriggerManager_ActiveTalkEventTrigger_Prefix(uint _placementId, bool _isActive)
+    public static IEnumerator GetEnumerator()
     {
-        Logger.LogWarning($"ActiveTalkEventTrigger: {_placementId}");
+        yield return null;
     }
-
-    [HarmonyPatch(typeof(EventTriggerScript), "Start")]
-    [HarmonyPrefix]
-    public static bool EventTriggerScript_Start_Prefix(ref EventTriggerScript __instance)
-    {
-        Logger.LogWarning($"EventTriggerScript Started");
-
-        return true;
-    }
-
-    /*
-    [HarmonyPatch(typeof(uDigimonMessagePanel), "StartMessage")]
-    [HarmonyPostfix]
-    public static void uDigimonMessagePanel_StartMessage_Postfix(string message, float time)
-    {
-        Logger.LogWarning($"{time}: {message}");
-    }
-
-    [HarmonyPatch(typeof(uCommonMessageWindow), "SetMessage")]
-    [HarmonyPostfix]
-    public static void uCommonMessageWindow_SetMessage_Postfix(string str, Pos window_pos = Pos.Center)
-    {
-        // Big Dialogs, not Npc Talking
-        Logger.LogWarning($"{str}");
-    }
-
-    [HarmonyPatch(typeof(ParameterPlacementNpc), "OpenDialog")]
-    [HarmonyPostfix]
-    public static void uDialogBase_OpenDialog_Postfix(string title, string message)
-    {
-        
-        AppMainScript.parameterManager.digimonIdList.ForEach((digimonId) =>
-        {
-            Logger.LogWarning($"{title}: {message}");
-        });
-        
-
-        Logger.LogWarning($"{title}: {message}");
-    }*/
 
 }
