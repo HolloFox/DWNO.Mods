@@ -12,6 +12,7 @@
 	- [ ] Shared Town Material Storage
 - [ ] Town
 	- [ ] Training Gym Disabled (Initial Parameter Boost for partner)
+	 	- [ ] Training I & II, feed to Digivolve to Rookie,
 	- [ ] DNA digivolutions shares resident pool
 	- [ ] Gifts from town is local
 - [ ] Player (1-4)
