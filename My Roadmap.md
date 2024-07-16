@@ -2,6 +2,11 @@
 - [ ] Replaces Botamon Dialog to Open a table
 
 ## Online Coop (2-4 player)
+### RoadMap
+- [ ] Update Main Menu to manage Lobby (Create & Join)
+	- [ ] Joined players can only pick Avatar
+
+### Features
 - [ ] NetCode (EOS)
 	- [ ] Lobby system to join games
 	- [ ] P2P Consumer code interface for other mods
@@ -11,8 +16,7 @@
 	- [ ] Shared Town Warehouse inventory
 	- [ ] Shared Town Material Storage
 - [ ] Town
-	- [ ] Training Gym Disabled (Initial Parameter Boost for partner)
-	 	- [ ] Training I & II, feed to Digivolve to Rookie,
+	- [ ] Training Gym Supports upto 4 Digimon (Ready System, auto success)
 	- [ ] DNA digivolutions shares resident pool
 	- [ ] Gifts from town is local
 - [ ] Player (1-4)
@@ -32,7 +36,7 @@
 	- [ ] OP player/partner specific
 - [ ] World
 	- [ ] Time can't be paused EXCEPT for battles
-	- [ ] Shared Progress (e.g. Cards, Digimon Info, ...)
+	- [ ] Shared Progress? (e.g. Cards, Digimon Info)
  - [ ] Dependent Mods
 	- [x] Seamless Battle
 	- [x] Battle Stats Multiplier
