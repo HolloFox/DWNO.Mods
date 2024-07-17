@@ -12,7 +12,6 @@ using Epic.OnlineServices.Connect;
 using Epic.OnlineServices.P2P;
 using Epic.OnlineServices.Sessions;
 using EOSPlugin.Utility;
-using Steamworks;
 
 namespace EOSPlugin.EOS
 {
@@ -58,8 +57,19 @@ namespace EOSPlugin.EOS
             }
         }
 
+        internal static bool IsInitialized = false;
+
         internal static void Initialize()
         {
+            Logger.LogInfo($"In Initialize: {IsInitialized}");
+            if (IsInitialized)
+            {
+                return;
+            }
+
+            IsInitialized = true;
+
+            
             var path = new[] { Environment.GetEnvironmentVariable("PATH") ?? string.Empty };
 
             // Combine the paths and remove duplicates
@@ -113,22 +123,29 @@ namespace EOSPlugin.EOS
                 integratedPlatformOptionsContainer = null;
             }
 
+            Logger.LogDebug($"Platform Interface Created");
+
             // We connected, now get all the interfaces and log in
             GetAllInterfaces();
-            // Login();            
+            Login();            
         }
 
         private static void GetAllInterfaces(){
+
+            Logger.LogDebug("Getting All Interfaces");
             authInterface = platformInterface.GetAuthInterface();
             connectInterface = platformInterface.GetConnectInterface();
             lobbyInterface = platformInterface.GetLobbyInterface();
             p2pInterface = platformInterface.GetP2PInterface();
             sessionInterface = platformInterface.GetSessionsInterface();
+            Logger.LogDebug("All Interfaces populated");
         }
 
         // Login to the EOS SDK
         private static void Login()
         {
+            Logger.LogDebug("Login Started");
+
             var loginOptions = new Epic.OnlineServices.Auth.LoginOptions()
             {
                 Credentials = new Epic.OnlineServices.Auth.Credentials()
@@ -140,8 +157,13 @@ namespace EOSPlugin.EOS
                 ScopeFlags = AuthScopeFlags.Presence | AuthScopeFlags.FriendsList | AuthScopeFlags.BasicProfile,
             };
 
+            Logger.LogDebug("login Option Created");
+            Logger.LogDebug($"AuthInterface is live: {authInterface != null}");
+
             authInterface.Login(ref loginOptions, null, (ref Epic.OnlineServices.Auth.LoginCallbackInfo loginCallbackInfo) =>
             {
+                Logger.LogDebug("called back");
+
                 if (loginCallbackInfo.ResultCode == Result.Success)
                 {
                     Logger.LogDebug("Login succeeded");
@@ -201,7 +223,7 @@ namespace EOSPlugin.EOS
             var clo = new CreateLobbyOptions()
             {
                 PermissionLevel = LobbyPermissionLevel.Publicadvertised,
-                MaxLobbyMembers = 32,
+                MaxLobbyMembers = 4,
                 BucketId = BucketId,
                 LocalUserId = productUserId,
                 DisableHostMigration = false,

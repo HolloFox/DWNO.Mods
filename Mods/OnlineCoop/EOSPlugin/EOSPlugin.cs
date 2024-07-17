@@ -7,6 +7,7 @@ using HarmonyLib;
 namespace EOSPlugin
 {
     [BepInPlugin(Guid, Name, Version)]
+    [BepInProcess("Digimon World Next Order.exe")]
     public class EOSPlugin : BasePlugin
     {
         // Plugin info
@@ -26,22 +27,13 @@ namespace EOSPlugin
             logSource = Logger;
 
             new Harmony(Guid).PatchAll();
-            EOSManager.Initialize();
-
         }
 
-        bool inBoard = false;
-
-        internal static bool SteamAuthFound = false;
-        private static bool SteamAuthProcessed = false;
-
-        internal static string SEAAP;
-        internal static string SASS;
+        internal static bool isInitialized = false;
 
         public void Update()
         {
             EOSManager.Tick();
-
         }
 
     }

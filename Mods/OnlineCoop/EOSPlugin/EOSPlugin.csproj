@@ -55,8 +55,7 @@
 
   <PropertyGroup>
     <PreBuildEvent>
-      <!-- xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\EOSSDK-$(EOSSDKPlatform)-Shipping.dll" "$(MSBuildProjectDirectory)\$(OutputPath)"
-      xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\$(PlatformTarget)\xaudio2_9redist.dll" "$(MSBuildProjectDirectory)\$(OutputPath)" -->
+      <!--xcopy /D /Y /R /Q "$(MSBuildProjectDirectory)\..\SDK\Bin\EOSSDK-$(EOSSDKPlatform)-Shipping.dll" "$(OutputPath)"-->
     </PreBuildEvent>
   </PropertyGroup>
 

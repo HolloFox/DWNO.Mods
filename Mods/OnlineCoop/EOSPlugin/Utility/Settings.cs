@@ -17,13 +17,13 @@ namespace EOSPlugin.Utility
 
         public static string RefreshToken { get; }
 
-        public static LoginCredentialType LoginCredentialType { get; internal set; } = LoginCredentialType.ExternalAuth;
+        public static LoginCredentialType LoginCredentialType { get; internal set; } = LoginCredentialType.AccountPortal;
         /// These fields correspond to <see cref="Credentials.Id" /> and <see cref="Credentials.Token" />, and their use differs based on the login type.
         /// For more information, see <see cref="Credentials" /> and the Auth Interface documentation.
         public static string Id { get; private set; } = "";
         public static string Token { get; private set; } = "";
 
-        public static ExternalCredentialType ExternalCredentialType { get; private set; } = ExternalCredentialType.SteamAppTicket;
+        public static ExternalCredentialType ExternalCredentialType { get; private set; } = ExternalCredentialType.Epic;
 
         public static AuthScopeFlags ScopeFlags
         {
@@ -43,6 +43,8 @@ namespace EOSPlugin.Utility
 
         public static void Initialize()
         {
+            EOSPlugin.logSource.LogDebug("Starting Settings Initialize");
+
             ProductId = Environment.GetCommandLineArgs().ReadArg("productid", ProductId);
             SandboxId = Environment.GetCommandLineArgs().ReadArg("sandboxid", SandboxId);
             DeploymentId = Environment.GetCommandLineArgs().ReadArg("deploymentid", DeploymentId);
@@ -59,6 +61,8 @@ namespace EOSPlugin.Utility
             VoiceServerPassword = Environment.GetCommandLineArgs().ReadArg("voiceserverpassword", VoiceServerPassword);
 
             IsAutoLoginEnabled = Environment.GetCommandLineArgs().ReadArg("autologin", IsAutoLoginEnabled);
+
+            EOSPlugin.logSource.LogDebug("Finishing Settings Initialize");
 
 #if !DEV
             /*if (LoginCredentialType != LoginCredentialType.Developer &&

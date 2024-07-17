@@ -8,6 +8,9 @@
 
 ### Features
 - [ ] NetCode (EOS)
+	- [x] Get EOS compiled and loaded into DWNO
+	- [x] Successfully get Platform Interface Running
+	- [ ] Get Auth and Connect Provider Running
 	- [ ] Lobby system to join games
 	- [ ] P2P Consumer code interface for other mods
 - [ ] Inventory
