@@ -14,14 +14,11 @@
 	- [ ] Lobby system to join games
 	- [ ] P2P Consumer code interface for other mods
 - [ ] Inventory
-	- [ ] Separate Player Item inventory
-	- [ ] Separate Player Material storage
 	- [ ] Shared Town Warehouse inventory
 	- [ ] Shared Town Material Storage
 - [ ] Town
 	- [ ] Training Gym Supports upto 4 Digimon (Ready System, auto success)
 	- [ ] DNA digivolutions shares resident pool
-	- [ ] Gifts from town is local
 - [ ] Player (1-4)
 	- [ ] 1 digimon partner each
 	- [ ] XP/Level Sync
@@ -32,13 +29,12 @@
 	- [ ] Death Sync all Partners
 	- [ ] Digivolve Sync all Partners
 		- [ ] All digimon need to be able to digivolve
-	- [ ] Auto uses portable toilet and prevent TF before TF invoked 
 - [ ] Battle
-	- [ ] Loot pool updated for multiple players
 	- [ ] Enemies Scaled up slightly for more players/digimon partners
 	- [ ] OP player/partner specific
 - [ ] World
 	- [ ] Time can't be paused EXCEPT for battles
+	- [ ] Dialog is synced (All players see the same dialog and can invoke Next Dialog)
 	- [ ] Shared Progress? (e.g. Cards, Digimon Info)
  - [ ] Dependent Mods
 	- [x] Seamless Battle
